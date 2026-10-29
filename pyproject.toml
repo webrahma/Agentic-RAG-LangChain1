@@ -1,0 +1,32 @@
+[project]
+name = "acl-rag-langchine"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Rahma", email = "rahmahassaan75@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "deepagents>=0.7.28",
+    "langchain>=1.4.6",
+    "langchain-google-genai>=4.4.2",
+    "langchain-text-splitters>=1.1.3",
+    "numpy>=2.5.4",
+    "pypdf>=6.21.1",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "streamlit>=1.66.1",
+]
+
+[project.scripts]
+acl-rag-langchine = "acl_rag_langchine:main"
+
+[build-system]
+requires = ["uv_build>=0.13.1,<0.14.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=7.4.0",
+]
